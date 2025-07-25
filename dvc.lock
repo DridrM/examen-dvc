@@ -87,6 +87,10 @@ stages:
       hash: md5
       md5: 587b61ed06fa377adc2f57c6dc417a7d
       size: 28268
+    - path: models/best_params.pkl
+      hash: md5
+      md5: 39c6fe551d3fe302087901cca05500df
+      size: 235
     - path: src/exam_dvc/models/train.py
       hash: md5
       md5: 992e36b22d69dd107bd0d1730c34fe8b
@@ -107,6 +111,10 @@ stages:
       hash: md5
       md5: c2f3f2d62017270951f308dee3c08bcd
       size: 12107
+    - path: models/best_model.pkl
+      hash: md5
+      md5: 97855bd58b097638f27158445e9d39d3
+      size: 6390090
     - path: src/exam_dvc/models/evaluate.py
       hash: md5
       md5: 8cd6890164a6eeb6c70dc5ad17bd33a0

@@ -32,6 +32,7 @@ stages:
     deps:
     - data/processed_data/X_train_scaled.csv
     - data/processed_data/y_train.csv
+    - models/best_params.pkl
     - src/exam_dvc/models/train.py
     outs:
     - models/best_model.pkl
@@ -40,6 +41,7 @@ stages:
     deps:
     - data/processed_data/X_test_scaled.csv
     - data/processed_data/y_test.csv
+    - models/best_model.pkl
     - src/exam_dvc/models/evaluate.py
     metrics:
       - metrics/scores.json:
