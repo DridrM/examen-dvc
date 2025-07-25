@@ -31,9 +31,9 @@ X_RAW_DATA_PATH = RAW_DATA_PATH / "X_raw.csv"
 Y_RAW_DATA_PATH = RAW_DATA_PATH / "y_raw.csv"
 
 
-#####################
-# Split data params #
-#####################
+###################################
+# Split and normalize data params #
+###################################
 
 # Train test split train ratio
 TRAIN_RATIO = 0.7
@@ -50,3 +50,28 @@ Y_TEST_PATH = PREPROCESSED_DATA_PATH / "y_test.csv"
 # Data path for scaled features
 X_TRAIN_SCALED_PATH = PREPROCESSED_DATA_PATH / "X_train_scaled.csv"
 X_TEST_SCALED_PATH = PREPROCESSED_DATA_PATH / "X_test_scaled.csv"
+
+
+######################################
+# Grid search and train model params #
+######################################
+
+# Models folder main path
+MODELS_PATH = LOCAL_PROJECT_PATH / "models"
+
+# Best params
+BEST_PARAMS_PATH = MODELS_PATH / "best_params.pkl"
+
+# Best model
+BEST_MODEL_PATH = MODELS_PATH / "best_model.pkl"
+
+
+##########################
+# Metrics storage params #
+##########################
+
+# Base metrics local storage path
+METRICS_PATH = LOCAL_PROJECT_PATH / "metrics"
+
+# Metrics json dump
+METRICS_JSON_DUMP = METRICS_PATH / "scores.json"

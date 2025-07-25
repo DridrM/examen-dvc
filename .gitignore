@@ -112,3 +112,5 @@ site/
 
 # Lightning logs
 lightning_logs/
+/models
+/metrics
